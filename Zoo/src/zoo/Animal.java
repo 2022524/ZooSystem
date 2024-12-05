@@ -6,7 +6,7 @@ package zoo;
 
 /**
  *
- * @author Lecturer
+ * @author Tarquin, Caroline, Primmy and James
  */
 public class Animal {
     

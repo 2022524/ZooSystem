@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Lecturer
+ * @author Tarquin, Caroline, Primmy and James
  */
 public class ZooImp implements Zoo{
     // interface implementation 
