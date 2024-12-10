@@ -5,21 +5,22 @@
 package zoo;
 
 /**
- *
  * @author Tarquin, Caroline, Primmy and James
+ * The Bird class represents birds, another category of animals.
+ * It extends Animal, inheriting all its attributes and behaviours.
  */
-public class Bird extends Animal{
+public class Bird extends Animal {
     
-    // Once the Mammal extends the animal class
-    // it will inherent the animal class attributes
-    // we can use to create new animal types 
-    // with the parent class attributes
+    // Bird does not add any new attributes or methods,
+    // it just categorises a certain type of Animal as Bird.
     
-    // Create a Dog name: Flix,    2,         12.5,         Home 
-    public Bird(String name, int age, double weight, String habitat){
-            
-            // we want to send this back to the parent 
-            super(name, age, weight, habitat);
+    // Constructor for Bird takes the same parameters as Animal,
+    // and passes them to the superclass (Animal) constructor.
+    public Bird(String name, int age, double weight, String habitat,
+                String healthStatus, String hungerStatus, String behaviour) {
+        
+        // Calling super initializes the Animal part of the Bird with these values:
+        // name, age, weight, habitat, healthStatus, hungerStatus and behaviour.
+        super(name, age, weight, habitat, healthStatus, hungerStatus, behaviour);
     }
-
 }

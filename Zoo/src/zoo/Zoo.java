@@ -5,32 +5,26 @@
 package zoo;
 
 /**
- *
  * @author Tarquin, Caroline, Primmy and James
+ * The Zoo interface sets out the methods that any class must provide.
+ * It ensures that all implementing classes share the same functionality.
  */
 public interface Zoo {
-
-        enum MenuOptions{
-        
-        // contain a couple of options 
-            
-            LIST_ANIMALS, // 0 +1
-            LIST_TYPES, // 1 +1
-            ADD_ANIMAL, // 2 +1
-            RANDOM_ANIMAL, // 3 +1 
-            EXIT // 5
-
-        }
-   
-        // implementing interfaces requires 
-        // that we implement all of the abstarct methods
-        
-        void listAllAnimals();
-        
-        void listAllTypes();
-        
-        void addAnimal(Animal animal); // requires we pas in animal information
-        
-        void getRandom();
     
+    // The Zoo interface defines a contract that any implementing class must follow.
+    // It declares methods that represent the functionalities required by the zoo system.
+    
+        // This enum defines the possible menu options the user can choose from.
+        enum MenuOptions {
+            LIST_ANIMALS,    // 1. Option displays all animals in the zoo.
+            LIST_TYPES,      // 2. Option displays all types of animals in the zoo.
+            ADD_ANIMAL,      // 3. Option lets you add an animal to the zoo.
+            RANDOM_ANIMAL,   // 4. Option outputs a random animal from the zoo.
+            EXIT             // 5. Option closes the zoo program.
+        }
+
+        void listAllAnimals(); // Method to list all animals in the system.
+        void listAllTypes(); // Method to list all current animal types.
+        void addAnimal(Animal animal); // Method to add a new animal.
+        void getRandom(); // Method to retrieve and display a random animal.
 }
